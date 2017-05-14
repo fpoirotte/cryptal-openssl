@@ -56,7 +56,6 @@ class Implementation implements CryptoInterface
                 'ecb' => CryptoInterface::MODE_ECB,
                 'ocb' => CryptoInterface::MODE_OCB,
                 'ofb' => CryptoInterface::MODE_OFB,
-                'xts' => CryptoInterface::MODE_XTS,
             ),
             'ciphers'   => array(
                 'des-ede3'      => CryptoInterface::CIPHER_3DES,
