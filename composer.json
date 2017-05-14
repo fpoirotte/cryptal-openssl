@@ -23,7 +23,7 @@
         "fpoirotte/cryptal": "dev-master"
     },
     "provides": {
-        "fpoirotte/cryptal-implementation": "*"
+        "fpoirotte/cryptal-implementation": "0.0.0"
     },
     "require-dev": {
         "phpmd/phpmd": "*",

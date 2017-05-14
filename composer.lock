@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fpoirotte/cryptal.git",
-                "reference": "b081049b8918c34dfbabb0f9266e7a1586bc9b76"
+                "reference": "a7a551b9a81ea8aa8047e74f0cc23b0a4bea2198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/b081049b8918c34dfbabb0f9266e7a1586bc9b76",
-                "reference": "b081049b8918c34dfbabb0f9266e7a1586bc9b76",
+                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/a7a551b9a81ea8aa8047e74f0cc23b0a4bea2198",
+                "reference": "a7a551b9a81ea8aa8047e74f0cc23b0a4bea2198",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +25,6 @@
             },
             "require-dev": {
                 "erebot/buildenv": "^1.4.0",
-                "fpoirotte/natives4doxygen": "*",
                 "phpmd/phpmd": "*",
                 "phpunit/phpunit": "*",
                 "sebastian/phpcpd": "*",
@@ -62,7 +61,7 @@
                 "mcrypt",
                 "openssl"
             ],
-            "time": "2017-05-14 00:14:30"
+            "time": "2017-05-14 12:40:44"
         }
     ],
     "packages-dev": [
