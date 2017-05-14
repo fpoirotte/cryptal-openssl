@@ -1,0 +1,46 @@
+{
+    "prefer-stable": true,
+    "name": "fpoirotte/cryptal-openssl",
+    "description": "An implementation of the Cryptography Abstraction Layer based on OpenSSL",
+    "keywords": ["cryptal", "crypto", "cryptography", "openssl"],
+    "homepage": "https://github.com/fpoirotte/cryptal-openssl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "François Poirotte",
+            "email": "clicky@erebot.net",
+            "role": "lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/fpoirotte/cryptal-openssl/issues",
+        "irc": "irc://irc.iiens.net/Clicky",
+        "source": "https://github.com/fpoirotte/cryptal-openssl"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "ext-openssl": "*",
+        "fpoirotte/cryptal": "dev-master"
+    },
+    "provides": {
+        "fpoirotte/cryptal-implementation": "*"
+    },
+    "require-dev": {
+        "phpmd/phpmd": "*",
+        "sebastian/phpcpd": "*",
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "erebot/buildenv": "^1.4.0",
+        "fpoirotte/natives4doxygen": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "fpoirotte\\Cryptal\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "1.0.x-dev"
+        }
+    }
+}
