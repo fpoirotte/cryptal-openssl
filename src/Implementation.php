@@ -101,10 +101,11 @@ class Implementation implements CryptoInterface
         $blockSize  = $this->getBlockSize();
         $missing    = $blockSize - (strlen($data) % $blockSize);
         $data      .= $this->padding->getPaddingData($blockSize, $missing);
+        $options    = OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING;
         if ($this->aead) {
-            $res = openssl_encrypt($data, $this->method, $key, OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING, $iv, $tag, $aad, $this->tagLength);
+            $res = openssl_encrypt($data, $this->method, $key, $options, $iv, $tag, $aad, $this->tagLength);
         } else {
-            $res = openssl_encrypt($data, $this->method, $key, OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING, $iv);
+            $res = openssl_encrypt($data, $this->method, $key, $options, $iv);
         }
         return $res;
     }
@@ -112,10 +113,11 @@ class Implementation implements CryptoInterface
     public function decrypt($iv, $key, $data, $tag = null, $aad = '')
     {
         $blockSize  = $this->getBlockSize();
+        $options    = OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING;
         if ($this->aead) {
-            $res = openssl_decrypt($data, $this->method, $key, OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING, $iv, $tag, $aad);
+            $res = openssl_decrypt($data, $this->method, $key, $options, $iv, $tag, $aad);
         } else {
-            $res = openssl_decrypt($data, $this->method, $key, OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING, $iv);
+            $res = openssl_decrypt($data, $this->method, $key, $options, $iv);
         }
         $padLen     = $this->padding->getPaddingSize($res, $blockSize);
         return $padLen ? (string) substr($res, 0, -$padLen) : $res;
