@@ -1,8 +1,8 @@
-cryptal-mcrypt
-==============
+cryptal-openssl
+===============
 
 This package contains an implementation of the `Cryptography Abstraction Layer`_
-using the legacy mcrypt PHP extension.
+based on PHP's OpenSSL extension.
 
 ..  _`Cryptography Abstraction Layer`:
     https://github.com/fpoirotte/cryptal
