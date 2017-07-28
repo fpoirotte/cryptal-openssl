@@ -1,6 +1,6 @@
 <?php
 
-namespace fpoirotte\Cryptal\Plugins;
+namespace fpoirotte\Cryptal\Plugins\Openssl;
 
 use fpoirotte\Cryptal\Implementers\PluginInterface;
 use fpoirotte\Cryptal\Implementers\CryptoInterface;
@@ -10,7 +10,7 @@ use fpoirotte\Cryptal\CipherEnum;
 use fpoirotte\Cryptal\ModeEnum;
 use fpoirotte\Cryptal\ImplementationTypeEnum;
 
-class Openssl implements CryptoInterface, PluginInterface
+class Crypto implements CryptoInterface, PluginInterface
 {
     protected $method;
     protected $tagLength;

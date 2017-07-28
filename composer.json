@@ -33,13 +33,16 @@
     },
     "autoload": {
         "psr-4": {
-            "fpoirotte\\Cryptal\\Plugins\\": "src/"
+            "fpoirotte\\Cryptal\\Plugins\\Openssl\\": "src/"
         }
     },
     "extra": {
         "branch-alias": {
             "dev-develop": "1.0.x-dev"
         },
-        "cryptal.entrypoint": "fpoirotte\\Cryptal\\Plugins\\Openssl"
+        "cryptal.entrypoint": [
+            "fpoirotte\\Cryptal\\Plugins\\Openssl\\Crypto",
+            "fpoirotte\\Cryptal\\Plugins\\Openssl\\Hash"
+        ]
     }
 }

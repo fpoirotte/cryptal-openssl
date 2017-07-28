@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a13d7b62a16ce27a7e714ad2d7d4790",
+    "content-hash": "5b858adb4bd37476620d24c4b60859ee",
     "packages": [
         {
             "name": "fpoirotte/cryptal",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fpoirotte/cryptal.git",
-                "reference": "6d638da613304c61a31ebfb1c6abca9dcd913f3d"
+                "reference": "a0dad4e83f593726191b2cae556da48dac96d1a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/6d638da613304c61a31ebfb1c6abca9dcd913f3d",
-                "reference": "6d638da613304c61a31ebfb1c6abca9dcd913f3d",
+                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/a0dad4e83f593726191b2cae556da48dac96d1a6",
+                "reference": "a0dad4e83f593726191b2cae556da48dac96d1a6",
                 "shasum": ""
             },
             "require": {
@@ -65,7 +65,7 @@
                 "mcrypt",
                 "openssl"
             ],
-            "time": "2017-07-28 12:20:01"
+            "time": "2017-07-28 17:54:04"
         },
         {
             "name": "fpoirotte/enum-trait",
