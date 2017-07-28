@@ -17,7 +17,7 @@ class Openssl implements CryptoInterface, PluginInterface
     protected $padding;
     protected $aead;
     protected $cipher;
-    protected $key;
+    private $key;
 
     protected static $supportedCiphers = null;
     protected static $supportedModes = null;
