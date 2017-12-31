@@ -31,10 +31,10 @@ class Hash extends AbstractHash implements PluginInterface
             (string) HashEnum::HASH_MD5()       => 'md5',
             (string) HashEnum::HASH_RIPEMD160() => 'ripemd160',
             (string) HashEnum::HASH_SHA1()      => 'sha1',
-            (string) HashEnum::HASH_SHA224()    => 'sha224',
-            (string) HashEnum::HASH_SHA256()    => 'sha256',
-            (string) HashEnum::HASH_SHA384()    => 'sha384',
-            (string) HashEnum::HASH_SHA512()    => 'sha512',
+            (string) HashEnum::HASH_SHA2_224()  => 'sha224',
+            (string) HashEnum::HASH_SHA2_256()  => 'sha256',
+            (string) HashEnum::HASH_SHA2_384()  => 'sha384',
+            (string) HashEnum::HASH_SHA2_512()  => 'sha512',
         );
 
         static::$supportedAlgos     = array_intersect($supported, openssl_get_md_methods(false));
